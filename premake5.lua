@@ -26,6 +26,7 @@ project "Hazel"
 
     includedirs
     {
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
@@ -82,10 +83,15 @@ project "Sandbox"
         "Hazel"
     }
 
-    defines
-    {
-        "HZ_PLATFORM_WINDOWS"
-    }
+	filter "system:windows"
+		cppdialect "C++17"
+		staticruntime "On"
+		systemversion "latest"
+
+        defines
+        {
+            "HZ_PLATFORM_WINDOWS"
+        }
 
     filter "configurations:Debug"
         defines "HZ_DEBUG"
