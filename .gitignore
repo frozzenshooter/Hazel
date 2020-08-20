@@ -17,3 +17,5 @@ bin-int/
 **.vcxproj
 **.vcxproj.filters
 **.vcxproj.user
+/Hazel/vendor/Glad/bin/Debug-windows-x86_64/Glad/Glad.pdb
+/Hazel/vendor/Glad/bin/Debug-windows-x86_64/Glad/Glad.lib
