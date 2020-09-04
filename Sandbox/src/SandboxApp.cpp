@@ -32,6 +32,7 @@ public:
 			Hazel::KeyPressedEvent& e = (Hazel::KeyPressedEvent&)event;
 			if (e.GetKeyCode() == HZ_KEY_TAB)
 				HZ_TRACE("Tab key is pressed (event)!");
+
 			HZ_TRACE("{0}", (char)e.GetKeyCode());
 		}
 	}
