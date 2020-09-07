@@ -9,6 +9,8 @@
 #include "Hazel/Layer.h"
 #include "Hazel/Log.h"
 
+#include "Hazel/Core/Timestep.h"
+
 #include "Hazel/ImGui/ImGuiLayer.h"
 
 // --- Renderer ----------------------------------------------------
